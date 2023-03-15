@@ -47,17 +47,19 @@
 
 
 <script lang="ts" >
+import { Menu as IconMenu, Location, Setting, Message } from '@element-plus/icons-vue'
 import NavBar from '../components/NavBar.vue'
 import { stringify } from 'querystring'
 
 
 export default {
   components: {
+    Setting,
     NavBar,
   },
   data() {
     return {
-      circlcircleUrleUrl: '',
+      circleUrl: '',
 
 
     }

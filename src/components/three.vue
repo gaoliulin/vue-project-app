@@ -1,6 +1,6 @@
 <template>
     <div class="three">
-      two
+      three
     </div>
 </template>
   
