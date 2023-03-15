@@ -9,49 +9,7 @@
 
         <!-- 侧边栏 -->
         <el-scrollbar>
-          <el-menu
-            active-text-color="#ffd04b"
-            background-color="#545c64"
-            class="el-menu-vertical-demo"
-            default-active="2"
-            text-color="#fff"
-          >
-            <el-sub-menu index="1">
-              <template #title>
-                <el-icon><location /></el-icon>
-                <span>Navigator One</span>
-              </template>
-              <el-menu-item index="1-1">
-                <router-link to="/main/one">item one</router-link>
-              </el-menu-item>
-              <el-menu-item index="1-2">
-                <router-link to="/main/two">item two</router-link>
-              </el-menu-item>
-              <el-sub-menu index="1-4">
-                <template #title>item three</template>
-                <el-menu-item index="1-4-1">
-                  <router-link to="/main/three">item three</router-link>
-                </el-menu-item>
-              </el-sub-menu>
-            </el-sub-menu>
-            <el-menu-item index="2">
-              <el-icon><icon-menu /></el-icon>
-              <span>Navigator Two</span>
-            </el-menu-item>
-            <el-menu-item index="3" disabled>
-              <el-icon><document /></el-icon>
-              <span>Navigator Three</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <el-icon><setting /></el-icon>
-              <span>
-                
-                <router-link to="/main/four">Navigator Four</router-link>
-              </span>
-            </el-menu-item>
-          </el-menu>
-
-
+          <NavBar />
         </el-scrollbar>
       </el-aside>
       
@@ -89,33 +47,17 @@
 
 
 <script lang="ts" >
-import {
-  Document,
-  Menu as IconMenu,
-  Location,
-  Setting,
-  Message, 
-} from '@element-plus/icons-vue'
+import NavBar from '../components/NavBar.vue'
 import { stringify } from 'querystring'
-
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
-const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
 
 
 export default {
   components: {
-    IconMenu,
-    Location,
-    Setting,
-    Message,
+    NavBar,
   },
   data() {
     return {
-      circleUrl: '',
+      circlcircleUrleUrl: '',
 
 
     }
