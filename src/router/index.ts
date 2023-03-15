@@ -62,4 +62,15 @@ const router = createRouter({
   ]
 })
 
+
+// 导航守卫
+router.beforeEach((to, from) => {
+
+  console.log('router.beforeEach--', to, from)
+  // ...
+  // 返回 false 以取消导航
+  // return false
+})
+
+
 export default router
