@@ -3,12 +3,12 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 
 import App from './App.vue'
-import Main from './Main.vue'
 import router from './router'
 
 import './assets/main.css'
 
-const app = createApp(Main)
+const app = createApp(App)
+// const app = createApp()
 
 app.use(createPinia())
 app.use(router)
